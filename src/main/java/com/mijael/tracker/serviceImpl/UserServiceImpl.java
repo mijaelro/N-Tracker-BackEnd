@@ -132,7 +132,7 @@ public class UserServiceImpl extends ClientService implements UserService {
         todos.add(todo);
         user.setTodos(todos);
         userRepository.save(user);
-        return todoRepository.findByName(todo.getName());
+        return todoRepository.findById(todo.getId()).orElse(todoRepository.findByName(todo.getName()));
     }
 
     @Override
