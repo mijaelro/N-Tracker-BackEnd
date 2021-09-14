@@ -43,15 +43,16 @@ public class TokenFilter implements Filter {
         try {
             String token;
             token = ((HttpServletRequest) servletRequest).getHeader("Authorization");
-            tokenManager.isExist(token);
             String type = FilterHelper.getType(url);
             System.out.println("type : " + type);
 
             switch (type) {
                 case ADMIN:
+                    tokenManager.isExist(token);
                     tokenManager.isControllerAllowed(ClientType.ADMINISTRATOR,token);
                     break;
                 case USER:
+                    tokenManager.isExist(token);
                     tokenManager.isControllerAllowed( ClientType.USER,token);
                     break;
 
