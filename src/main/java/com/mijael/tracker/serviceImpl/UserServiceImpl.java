@@ -127,13 +127,12 @@ public class UserServiceImpl extends ClientService implements UserService {
 
     @Override
     public Todo addTodo(Todo todo) throws IllegalActionException {
-        todoRepository.save(todo); 
         var user =userRepository.findById(todo.getUserId()).orElse(null);
         var todos =  user.getTodos();
         todos.add(todo);
         user.setTodos(todos);
         userRepository.save(user);
-        return todoRepository.findById(todo.getId()).orElse(todoRepository.findByName(todo.getName()));
+        return todoRepository.findByName(todo.getName());
     }
 
     @Override
