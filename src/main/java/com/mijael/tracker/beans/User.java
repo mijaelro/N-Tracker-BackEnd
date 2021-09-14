@@ -37,15 +37,18 @@ public class User {
     @Singular
     @OnDelete(action = OnDeleteAction.CASCADE)
     @OneToMany(cascade=CascadeType.ALL ,fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_expenses", referencedColumnName="expenses")
     private List<Expense> expenses;
 
     @Singular
     @OnDelete(action = OnDeleteAction.CASCADE)
+    @JoinColumn(name = "user_links", referencedColumnName="links")
     @OneToMany(cascade = CascadeType.ALL)
     private List<Link> links;
 
     @Singular
     @OnDelete(action = OnDeleteAction.CASCADE)
+    @JoinColumn(name = "user_todos", referencedColumnName="todos")
     @OneToMany(cascade =CascadeType.ALL)
     private List<Todo> todos;
 
