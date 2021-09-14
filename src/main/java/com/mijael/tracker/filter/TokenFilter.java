@@ -48,11 +48,9 @@ public class TokenFilter implements Filter {
 
             switch (type) {
                 case ADMIN:
-                    tokenManager.isExist(token);
                     tokenManager.isControllerAllowed(ClientType.ADMINISTRATOR,token);
                     break;
                 case USER:
-                    tokenManager.isExist(token);
                     tokenManager.isControllerAllowed( ClientType.USER,token);
                     break;
 
