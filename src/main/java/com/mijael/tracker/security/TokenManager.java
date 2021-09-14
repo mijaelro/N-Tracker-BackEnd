@@ -42,7 +42,6 @@ public class TokenManager {
 
     public void deleteToken(String token) {
         map.remove(token);
-        System.out.println("token from tm map" + map.get(token));
     }
 
     public boolean isExist(String token) throws TokenErrorException {
