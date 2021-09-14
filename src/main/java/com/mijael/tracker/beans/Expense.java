@@ -23,7 +23,7 @@ public class Expense {
     @Column(nullable = false)
     private int userId;
 
-    @Column(nullable = false, length = 25 ,unique=true)
+    @Column(nullable = false, length = 25 )
     private String name;
 
     @Column(nullable = false, length = 240 )

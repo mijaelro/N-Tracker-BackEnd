@@ -55,10 +55,6 @@ public class UserServiceImpl extends ClientService implements UserService {
     @Override
     public Expense addExpense(Expense expense) throws IllegalActionException {
         var user =userRepository.findById(expense.getUserId()).orElse(null);
-        if(linkRepository.existsByName(expense.getName())){
-            throw new IllegalActionException("Error , name: " + expense.getName()
-                    + "already exists , try adding an expense with a different name");
-        }
         var expenses =  user.getExpenses();
         expenses.add(expense);
         user.setExpenses(expenses);
@@ -95,10 +91,6 @@ public class UserServiceImpl extends ClientService implements UserService {
     @Override
     public Link addLink(Link link) throws IllegalActionException {
         var user =userRepository.findById(link.getUserId()).orElse(null);
-        if(linkRepository.existsByName(link.getName())){
-            throw new IllegalActionException("Error , name: " + link.getName()
-                    + "already exists , try adding a link with a different name");
-        }
        var links =  user.getLinks();
         links.add(link);
         user.setLinks(links);
@@ -136,10 +128,6 @@ public class UserServiceImpl extends ClientService implements UserService {
     @Override
     public Todo addTodo(Todo todo) throws IllegalActionException {
         var user =userRepository.findById(todo.getUserId()).orElse(null);
-        if(linkRepository.existsByName(todo.getName())){
-            throw new IllegalActionException("Error , name: " + todo.getName()
-                    + "already exists , try adding a todo with a different name");
-        }
         var todos =  user.getTodos();
         todos.add(todo);
         user.setTodos(todos);
