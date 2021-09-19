@@ -31,7 +31,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense = Expense.builder()
                 .name("Phone")
-                .description("Bougth a new phone ")
+                .description("Bougth a new phone from bug ")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(8)))
                 .price(2230.5)
                 .userId(1)
@@ -39,14 +39,14 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense2 = Expense.builder()
                 .name("PC")
-                .description("Bougth a new computer ")
+                .description("Bougth a new computer from bug ")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(7)))
                 .price(3230.5)
                 .userId(1)
                 .build();
         Expense expense3 = Expense.builder()
                 .name("watch")
-                .description("Bougth an Apple watch ")
+                .description("Bougth an Apple watch from bug ")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(6)))
                 .price(1230.5)
                 .userId(1)
@@ -54,7 +54,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense5 = Expense.builder()
                 .name("vaccum")
-                .description("Bougth a vaccum cleaner ")
+                .description("Bougth a vaccum cleaner from homecenter")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(5)))
                 .price(1200.5)
                 .userId(1)
@@ -62,7 +62,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense6 = Expense.builder()
                 .name("tv")
-                .description("Bougth a 55 inch tv ")
+                .description("Bougth a 55 inch tv from homecenter ")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(4)))
                 .price(2230.5)
                 .userId(1)
@@ -70,7 +70,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense7 = Expense.builder()
                 .name("tami4")
-                .description("Bougth a new cooler ")
+                .description("Bougth a new cooler from strauss")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(3)))
                 .price(4230.5)
                 .userId(1)
@@ -78,7 +78,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense8 = Expense.builder()
                 .name("Closet")
-                .description("Bougth a new closet for my room ")
+                .description("Bougth a new closet for my room from ikea ")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(2)))
                 .price(1030.5)
                 .userId(1)
@@ -86,7 +86,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense9 = Expense.builder()
                 .name("machine")
-                .description("Bougth a beanz coffee machine ")
+                .description("Bougth a beanz coffee machine from beanz")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusMonths(1)))
                 .price(730.5)
                 .userId(1)
@@ -94,7 +94,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense10 = Expense.builder()
                 .name("charger")
-                .description("Bougth a new pc charger ")
+                .description("Bougth a new pc charger from bug")
                 .purchaseDate(Date.valueOf(LocalDate.now()))
                 .price(200.5)
                 .userId(1)
@@ -102,7 +102,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense11 = Expense.builder()
                 .name("vape")
-                .description("Bougth a new vape ")
+                .description("Bougth a new vape from theVapeStore")
                 .purchaseDate(Date.valueOf(LocalDate.now().plusMonths(1)))
                 .price(330.5)
                 .userId(1)
@@ -110,7 +110,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense12 = Expense.builder()
                 .name("theater")
-                .description("Bougth a new sound system ")
+                .description("Bougth a new sound system from bug ")
                 .purchaseDate(Date.valueOf(LocalDate.now().plusMonths(2)))
                 .price(1830.5)
                 .userId(1)
@@ -118,7 +118,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense13 = Expense.builder()
                 .name("backpack")
-                .description("Bougth a new backpack ")
+                .description("Bougth a new backpack from megaSport")
                 .purchaseDate(Date.valueOf(LocalDate.now().plusMonths(3)))
                 .price(130.5)
                 .userId(1)
@@ -126,14 +126,14 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense14 = Expense.builder()
                 .name("clothes")
-                .description("Bougth new clothes ")
+                .description("Bougth new clothes in american Eagle ")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).plusMonths(1)))
                 .price(730.5)
                 .userId(1)
                 .build();
         Expense expense15 = Expense.builder()
                 .name("shoes")
-                .description("Bougth 2 pairs of shoes ")
+                .description("Bougth 2 pairs of shoes in shoesOnline")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).plusMonths(2)))
                 .price(530.5)
                 .userId(1)
@@ -141,7 +141,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense16 = Expense.builder()
                 .name("tools")
-                .description("Bougth home tools ")
+                .description("Bougth home tools from homeCenter")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).plusMonths(3)))
                 .price(930.5)
                 .userId(1)
@@ -149,7 +149,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense17 = Expense.builder()
                 .name("suca")
-                .description("Bougth a sukka ")
+                .description("Bougth a sukka from homeCenter")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1)))
                 .price(530.5)
                 .userId(1)
@@ -157,7 +157,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense18 = Expense.builder()
                 .name("window")
-                .description("Bougth a window ")
+                .description("Bougth a window from homeCenter")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(1)))
                 .price(330.5)
                 .userId(1)
@@ -165,7 +165,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense19 = Expense.builder()
                 .name("ps5")
-                .description("Bougth the new ps5 ")
+                .description("Bougth the new ps5 from Bug ")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(2)))
                 .price(3230.5)
                 .userId(1)
@@ -173,7 +173,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense20 = Expense.builder()
                 .name("scooter")
-                .description("Bougth a xiamoi scooter ")
+                .description("Bougth a xiamoi scooter from bug")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(3)))
                 .price(2230.5)
                 .userId(1)
@@ -181,7 +181,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense21 = Expense.builder()
                 .name("pump")
-                .description("Bougth a pump ")
+                .description("Bougth a pump from homeCenter")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(4)))
                 .price(1000.5)
                 .userId(1)
@@ -189,7 +189,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense22 = Expense.builder()
                 .name("utensils")
-                .description("Bougth kitchen utencils ")
+                .description("Bougth kitchen utencils from casa")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(5)))
                 .price(250.5)
                 .userId(1)
@@ -197,7 +197,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense23 = Expense.builder()
                 .name("Phone")
-                .description("Bougth the new android ")
+                .description("Bougth the new android from bug")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(6)))
                 .price(2230.5)
                 .userId(1)
@@ -205,7 +205,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense24 = Expense.builder()
                 .name(" bottle")
-                .description("Bougth an electric buttle ")
+                .description("Bougth an electric buttle from hashmal")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(7)))
                 .price(130.5)
                 .userId(1)
@@ -213,7 +213,7 @@ public class InnitData implements CommandLineRunner {
 
         Expense expense25 = Expense.builder()
                 .name("course")
-                .description("Bougth a udemy cousrse ")
+                .description("Bougth a udemy course in udemy")
                 .purchaseDate(Date.valueOf(LocalDate.now().minusYears(1).minusMonths(8)))
                 .price(200.5)
                 .userId(1)
